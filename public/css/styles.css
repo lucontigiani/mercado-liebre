@@ -107,7 +107,7 @@ p {
 }
 
 .logo {
-    width: 50%;
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: 10px;
@@ -220,8 +220,80 @@ footer .modulo-footer {
     background-color: white;
     text-align: center;
 }
+
+/* register */
+
+.register form {
+    width: 100%;
+    padding: 50px;
+}
+
+.register form input {
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 20px;
+   
+}
+
+.register form label {
+    padding-bottom: 10px;
+    vertical-align: super;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.register form button {
+    font-weight: bold;
+    background-color: #03264C;
+    width: 40%;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    display: inline-block;
+    border-style: none;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+button.enviar:hover {
+    background-color: rgb(114, 250, 114);
+
+}
+.categorias {
+    display: inline-block;
+    
+    
+}
+
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+
+.option {
+    display: inline-block;
+    
+}
+
+input[type=text],
+input[type=password] {
+ width: 100%;
+}
+
+
 /* tablet */
 @media (min-width: 481px) {
+
+.navbar {
+    display: none;
+    padding: 10px;
+}
 
 .encabezado .logo {
     padding: 10px 10px 10px 15px;
@@ -274,11 +346,6 @@ footer .modulo-footer {
     font-size: 16px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
-
 .nav, .login {
     display: inline-block;
 }
@@ -310,13 +377,20 @@ footer .modulo-footer {
     padding-left: 5px;
 }
 
-.burger-menu {
-    display: none;
-}
+
 }
 
 /* laptop*/
 @media (min-width: 769px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    .burger-menu {
+        display: none;
+    }
 
     .cont-header  {
         display: flex;
@@ -333,7 +407,7 @@ footer .modulo-footer {
     }
 
     .logo {
-        width: 50%;
+        width: 30%;
         display: block;
         margin-left: 0;
         margin-right: 0;
@@ -372,36 +446,5 @@ footer .modulo-footer {
 /* desktop */
 @media (min-width: 1280px) {
 
-}
-
-/* register */
-
-.register form {
-    display:flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 50px;
-}
-
-.register form input {
-    height: 30px;
-    border-radius: 5px;
-    border-style: none;
-    margin-bottom: 10px;
-
-}
-
-.register form label {
-    padding-bottom: 10px;
-}
-
-.register form button {
-    color:#03264C;
-    width: 200px;
-    border-radius: 5px;
-}
-
-.categorias {
-    display: inline;
 }
 
