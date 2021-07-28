@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    background-color: #ebebeb;
+    }
+
+header {
+    background-color: #EAC926;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    color: #666;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+main {
+    margin: auto; 
+    text-align: center;
+    display: block;
+        width: 90%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article {
+    
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h3 {
+ font-size: 24px;
+ text-align: left;
+ color: #666;
+ padding: 30px; 
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.cont-header {
+    padding: 15px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado form {
+    position: relative;
+}
+
+.encabezado form div {
+    position: relative;
+}
+.encabezado input {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 5px; 
+    font-size: 16px;
+
+}
+
+.encabezado button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: 0;
+    padding: 2px;    
+
+}
+
+.encabezado button i {
+    font-size: 20px;
+    color:  #666;
+
+}
+
+.logo {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+
+}
+
+.cuotas {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cuotas p {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navbar {
+    display: none;
+    padding: 10px;
+}
+
+.cont-burger-menu {
+    text-align: center;
+}
+
+.burger-menu{
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    font-size:24px;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    margin: 10px 10px 20px;
+  
+}
+
+.banner {
+    width: 100%; 
+    margin-bottom: -5px;
+}
+
+.productos{
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.imagen-productos {
+    width: 100%;
+}
+
+.info {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    text-align: left;
+    position: relative; 
+    
+}
+
+.pre-des {
+  display: flex; 
+}
+
+.pre-des .precios {
+font-size: 18px;
+   width: 30%;
+}
+
+.pre-des .des-des {
+    width: 70%;
+    font-size: 16px;
+    color: #39b54a;
+    text-align: center;
+}
+
+.info .nombre {
+    padding-top: 10px;
+    display: none;
+}
+
+.info i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.icon-footer {
+    font-size: 2em;
+    color: blue
+}
+
+footer .modulo-footer {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-copy {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+/* tablet */
+@media (min-width: 481px) {
+
+.encabezado .logo {
+    padding: 10px 10px 10px 15px;
+}
+
+.encabezado form {
+    padding: 10px 10px 10px 15px;
+ }
+
+.cont-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+.producto{
+    width: 40%;
+}
+.ultima-visita {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ofertas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.producto {
+    display: block;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;    
+}
+
+.producto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+
+}
+.info .nombre {
+    padding-top: 10px;
+    display: flex;
+    font-size: 16px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav, .login {
+    display: inline-block;
+}
+
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.login ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav ul li {
+    padding: 0 10px;
+} 
+
+.login ul li {
+    padding: 0 10px;
+}
+
+.login ul li i{
+    padding-left: 5px;
+}
+
+.burger-menu {
+    display: none;
+}
+}
+
+/* laptop*/
+@media (min-width: 769px) {
+
+    .cont-header  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 30px;
+    }
+
+    .encabezado {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+    }
+
+    .logo {
+        width: 50%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .producto{
+        width: 24%;
+    }
+
+    .producto .nombre {
+        opacity: 0;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+
+    }
+
+    .producto:hover .nombre {
+        opacity: 1;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    footer .modulo-footer {
+        margin-bottom: 15px;
+        width: 30%;
+        text-align: center;
+    }
+    
+}
+
+/* desktop */
+@media (min-width: 1280px) {
+
+}
+
+/* register */
+
+.register form {
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px;
+}
+
+.register form input {
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 10px;
+
+}
+
+.register form label {
+    padding-bottom: 10px;
+}
+
+.register form button {
+    color:#03264C;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.categorias {
+    display: inline;
+}
+
