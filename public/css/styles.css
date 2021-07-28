@@ -204,9 +204,19 @@ font-size: 18px;
     top: -15px;
 }
 
-.icon-footer {
+.icon-footer i{
     font-size: 2em;
-    color: blue
+    color: blue;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+}
+
+.icon-footer i:hover {
+    color: #1aeba5;
 }
 
 footer .modulo-footer {
@@ -260,7 +270,7 @@ footer .modulo-footer {
 }
 
 button.enviar:hover {
-    background-color: rgb(114, 250, 114);
+    background-color: #0022AA;
 
 }
 .categorias {
@@ -439,6 +449,10 @@ input[type=password] {
         margin-bottom: 15px;
         width: 30%;
         text-align: center;
+    }
+
+    .register form {
+        width: 50%;
     }
     
 }
